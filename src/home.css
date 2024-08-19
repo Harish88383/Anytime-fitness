@@ -1,0 +1,256 @@
+/* Reset default margin and padding */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark theme styles */
+body {
+  background-image: url("D://fitness-main//public//ll.jpg"); /* Ensure the path is correct */
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px 0;
+  display: flex;
+  justify-content: center; /* Center-align header content */
+}
+
+nav ul.menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Center-align menu items */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.menu li {
+  margin: 0 10px; /* Adjust spacing between items */
+  position: relative;
+}
+
+nav ul.menu li.welcome-text {
+  font-weight: bold; /* Make welcome text bold */
+  margin-right: auto; /* Push the welcome text to the left */
+  margin-left: 0; /* Remove any left margin */
+  flex: 1; /* Allow the welcome text to take available space */
+  text-align: left; /* Align welcome text to the left */
+  text-transform: uppercase; /* Make welcome text uppercase */
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul.menu li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #0022ff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav ul.menu li a:hover::after {
+  width: 100%;
+}
+
+nav ul.menu li a:hover {
+  color: #00FF7F; /* Lighter green color */
+}
+
+.login-btn {
+  background-color: #00e1ff; /* Lighter green color */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #008000; /* Darker green color */
+}
+
+.hero {
+  text-align: center;
+  padding: 150px 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Make hero text uppercase */
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-style: italic; /* Make hero subtext italic */
+}
+
+.cta-button {
+  background-color: #00e1ff; /* Lighter green color */
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transition for hover */
+}
+
+.cta-button:hover {
+  background-color: #005380; /* Darker green color */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.content {
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center; /* Center-align items */
+}
+
+.muscle-box {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add smooth transition for hover */
+  width: 200px;
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.muscle-box:hover {
+  transform: scale(1.05); /* Slightly enlarge box on hover */
+}
+
+.muscle-box img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px; /* Add spacing between text and image */
+  border-radius: 10px; /* Add rounded corners to images */
+}
+
+.state-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 30px; /* Add spacing between sections */
+}
+
+.state-section p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.state-section .cta-button {
+  font-size: 18px; /* Slightly larger font for CTA button */
+  padding: 12px 24px; /* Adjust padding */
+}
+
+/* Footer Styles */
+footer.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-column {
+  margin: 0 20px;
+  text-align: center;
+}
+
+footer .footer-column a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+footer .footer-column a:hover {
+  color: #002aff; /* Lighter green color */
+}
+
+footer .footer-column.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px; /* Larger font size for social icons */
+}
+
+/* Exercise List Styles */
+.exercise-list {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.exercise-list h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.exercise-list ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.exercise-list li {
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.exercise-list li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.exercise-list li.no-hover {
+  background-color: transparent;
+}
+
+.exercise-list li.no-bullet {
+  list-style: none;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  background-color: #b80205;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
